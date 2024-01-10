@@ -20,3 +20,40 @@ html {
   scroll-behavior: smooth;
 }
 
+@layer components {
+  .hero-text-slide {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease-out, transform 0.2s ease-out;
+  }
+  
+  .hero-text-slide.animate {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-link-slide {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.2s ease-out;
+  }
+  
+  .hero-link-slide.animate {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .portrait {
+    opacity: 0;
+    transition: opacity 1s ease-in
+  }
+  
+  .portrait.animate {
+    opacity: 1;
+  }
+
+
+}
+
+
+
