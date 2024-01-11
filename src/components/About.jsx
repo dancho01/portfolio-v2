@@ -22,10 +22,10 @@ const About2 = () => {
         <div className='h-full max-w-[1000px] flex flex-col mx-auto text-gray-400 px-8 text-xl pt-14'>
             <h1 className='text-4xl font-bold text-[#0097b2] text-center my-4'>About Me</h1>
             <div className='grid md:grid-cols-2 gap-8 my-4'>
-                <div className='text-center md:text-right'>
+                <div className='text-center sm:text-left md:text-right'>
                 Hi, my name is Daniel and I am a currently a UNSW student studying <span className='text-[white] font-extrabold'>Bachelor of Computer Science</span> and I have a keen interest in <span className='text-white font-extrabold'>web development</span>. Having self taught <span className='text-white font-extrabold'>HTML</span>, <span className='text-white font-extrabold'>CSS</span> and <span className='text-white font-extrabold'>JavaScript</span>, I have been able to use the knowledge I gained and start building my own webpages that is both interactive and visually appealing. 
                 </div>
-                <div>
+                <div className='text-center sm:text-left'>
                     In my spare I like to
                     <ul>
                         <li>• Read 📚</li>

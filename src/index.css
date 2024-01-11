@@ -52,6 +52,17 @@ html {
     opacity: 1;
   }
 
+  .navlink-slide {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  }
+  
+  .navlink-slide.animate {
+    opacity: 1;
+    transform: none;
+  }
+
 
 }
 

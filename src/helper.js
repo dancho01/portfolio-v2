@@ -17,3 +17,14 @@ export function animateHeroText() {
     });    
     heroIcon.classList.add('animate');
 }
+
+export function animateNavbar() {
+  const navLinks = document.querySelectorAll('.navlink-slide');
+  var index = 0
+  navLinks.forEach((link) => {
+    setTimeout(() => {
+      link.classList.add('animate');
+    }, 100 * (index + 1));
+    index += 1
+  });
+}

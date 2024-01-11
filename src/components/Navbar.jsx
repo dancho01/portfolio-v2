@@ -2,37 +2,44 @@ import React from 'react'
 import logo from '../assets/logo2.png'
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import { animateNavbar } from '../helper'
+
 
 const Nav2 = () => {
     const [nav, setNav] = React.useState(false)
+
+    React.useEffect(() => {
+        animateNavbar()
+    }, [])
+
     function handleClick() {
         setNav(!nav)
     }
 
   return (
     <div className='bg-[#1f1e1e] fixed w-full h-[70px] flex justify-between px-3 items-center z-10'>
-            <div className='ml-2' >
+            <div className='ml-2 ' >
                 <a href="#home-section">
-                    <img src={logo} alt="Logo" width={45} />
+                    <img src={logo} alt="Logo" width={45} className='navlink-slide'/>
                 </a> 
             </div>
             <div>
                 <ul className='hidden md:flex gap-1 text-white font-semibold'>
-                    <li className=''>
+                    <li className='navlink-slide'>
                         <a className='px-4 py-3 hover:bg-gray-800 rounded-xl duration-200' href="#home-section">Home</a>
                     </li>
-                    <li>
+                    <li className='navlink-slide'>
                         <a className='px-4 py-3 hover:bg-gray-800 rounded-xl duration-200' href="#about-section">About</a> 
                     </li>
-                    <li>
+                    <li className='navlink-slide'>
                         <a className='px-4 py-3 hover:bg-gray-800 rounded-xl duration-200' href="#project-section">Project</a>
                     </li>
-                    <li>
+                    <li className='navlink-slide'>
                         <a className='px-4 py-3 hover:bg-gray-800 rounded-xl duration-200' href="#contact-section">Contact</a>
                     </li>
                 </ul>
             </div>
-            <div onClick={handleClick} className='md:hidden'>
+            <div onClick={handleClick} className='md:hidden navlink-slide'>
                 {!nav ? <MenuIcon sx={{ color: 'white' }} /> : <MenuOpenIcon sx={{ color: 'white' }} />}
             </div>
 
