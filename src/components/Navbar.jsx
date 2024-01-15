@@ -46,10 +46,15 @@ const Nav2 = () => {
                     </li>
                 </ul>
             </div>
-            
-            <div onClick={handleClick} className='md:hidden navlink-slide cursor-pointer hover:bg-gray-800 rounded-full px-2 py-2'>
-                {!nav ? <MenuIcon sx={{ color: 'white' }} /> : <MenuOpenIcon sx={{ color: 'white' }} />}
-            </div>
+         
+            <ul className='md:hidden flex gap-1 items-center'>
+                <li className='navlink-slide cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-800 rounded-full px-2 py-2' onClick={() => {toggleDarkMode(getters, setters)}}>
+                { getters.darkMode ? <LightModeIcon /> : <DarkModeIcon /> }
+                </li>
+                <li onClick={handleClick} className='navlink-slide cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-800 rounded-full px-2 py-2'>
+                {!nav ? <MenuIcon /> : <MenuOpenIcon /> }
+                </li>
+            </ul>    
 
             {nav ? <div onClick={handleClick} className='bg-black/40 fixed w-full h-screen top-[70px] left-0'>
             </div> : ''}
