@@ -28,3 +28,14 @@ export function animateNavbar() {
     index += 1
   });
 }
+
+export function animateAbout() {
+  const navLinks = document.querySelectorAll('.about-slide');
+  var index = 0
+  navLinks.forEach((link) => {
+    setTimeout(() => {
+      link.classList.add('animate');
+    }, 100 * (index + 1));
+    index += 1
+  });
+}

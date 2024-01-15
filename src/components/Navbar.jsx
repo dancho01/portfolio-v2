@@ -39,9 +39,13 @@ const Nav2 = () => {
                     </li>
                 </ul>
             </div>
-            <div onClick={handleClick} className='md:hidden navlink-slide'>
+            
+            <div onClick={handleClick} className='md:hidden navlink-slide cursor-pointer hover:bg-gray-800 rounded-full px-2 py-2'>
                 {!nav ? <MenuIcon sx={{ color: 'white' }} /> : <MenuOpenIcon sx={{ color: 'white' }} />}
             </div>
+
+            {nav ? <div onClick={handleClick} className='bg-black/40 fixed w-full h-screen top-[70px] left-0'>
+            </div> : ''}
 
             {/*Mobile Menu*/}
             <ul className={!nav ? 'flex flex-col absolute w-[60%] h-screen bg-slate-500 right-[-60%] top-[70px] duration-300 gap-6 items-center' : 'flex flex-col items-center absolute w-[60%] h-screen gap-6 bg-[#0097b2] right-0 top-[70px] duration-300 text-white font-bold text-xl'}>
