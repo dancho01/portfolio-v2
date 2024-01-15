@@ -1,12 +1,10 @@
 import React from 'react'
 import { HiOutlineMail } from 'react-icons/hi'
-import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {FaGithub, FaLinkedin, FaFacebook} from 'react-icons/fa'
-
 
 const Footer = () => {
   return (
-    <div className='w-full h-[200px] bg-gradient-to-r from-[#0870ee] to-[#13c634]'>
+    <div className='w-full h-[200px] bg-gradient-to-r from-[#0870ee] to-[#13c634] text-[#e8e6e3] dark:text-black'>
         <div className='flex flex-col items-center '>
             <div className='flex gap-4 justify-center my-8 sm:justify-start'>
                 <a className='hover:scale-110 duration-200' href='https://github.com/dancho01' target='blank'>

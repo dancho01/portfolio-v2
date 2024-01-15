@@ -2,11 +2,15 @@ import React from 'react'
 import logo from '../assets/logo2.png'
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
-import { animateNavbar } from '../helper'
+import { animateNavbar, toggleDarkMode } from '../helper'
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import { Context, useContext } from '../context';
 
 
 const Nav2 = () => {
     const [nav, setNav] = React.useState(false)
+    const { getters, setters } = useContext(Context)
 
     React.useEffect(() => {
         animateNavbar()
@@ -17,25 +21,28 @@ const Nav2 = () => {
     }
 
   return (
-    <div className='bg-[#1f1e1e] fixed w-full h-[70px] flex justify-between px-3 items-center z-10'>
-            <div className='ml-2 ' >
+    <div className='dark:bg-[#1f1e1e] bg-[#ebebeb] fixed w-full h-[70px] flex justify-between px-3 items-center z-40'>
+            <div className='ml-2'>
                 <a href="#home-section">
                     <img src={logo} alt="Logo" width={45} className='navlink-slide'/>
                 </a> 
             </div>
             <div>
-                <ul className='hidden md:flex gap-1 text-white font-semibold'>
+                <ul className='hidden md:flex gap-1 dark:text-white font-semibold items-center'>
                     <li className='navlink-slide'>
-                        <a className='px-4 py-3 hover:bg-gray-800 rounded-xl duration-200' href="#home-section">Home</a>
+                        <a className='px-4 py-3 hover:bg-gray-300 dark:hover:bg-gray-800 rounded-xl duration-200' href="#home-section">Home</a>
                     </li>
                     <li className='navlink-slide'>
-                        <a className='px-4 py-3 hover:bg-gray-800 rounded-xl duration-200' href="#about-section">About</a> 
+                        <a className='px-4 py-3 hover:bg-gray-300 dark:hover:bg-gray-800 rounded-xl duration-200' href="#about-section">About</a> 
                     </li>
                     <li className='navlink-slide'>
-                        <a className='px-4 py-3 hover:bg-gray-800 rounded-xl duration-200' href="#project-section">Project</a>
+                        <a className='px-4 py-3 hover:bg-gray-300 dark:hover:bg-gray-800 rounded-xl duration-200' href="#project-section">Project</a>
                     </li>
                     <li className='navlink-slide'>
-                        <a className='px-4 py-3 hover:bg-gray-800 rounded-xl duration-200' href="#contact-section">Contact</a>
+                        <a className='px-4 py-3 hover:bg-gray-300 dark:hover:bg-gray-800 rounded-xl duration-200' href="#contact-section">Contact</a>
+                    </li>
+                    <li className='navlink-slide cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-800 rounded-full px-2 py-2' onClick={() => {toggleDarkMode(getters, setters)}}>
+                        { getters.darkMode ? <LightModeIcon /> : <DarkModeIcon /> }
                     </li>
                 </ul>
             </div>
