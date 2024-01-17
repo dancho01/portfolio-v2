@@ -8,16 +8,17 @@ const Project2 = () => {
   return (
     <div id='project-section' className='w-full h-auto'>
 
-        <div className='h-full max-w-[1000px] flex flex-col mx-auto text-white items-center'>
+        <div className='h-full max-w-[1000px] flex flex-col mx-auto dark:text-white items-center'>
             <h1 className='text-4xl font-bold text-[#0097b2] text-center mt-20'>Projects</h1>
 
-            <div className='my-8 w-[400px] lg:w-auto grid lg:grid-cols-2 overflow-hidden rounded-xl'>
+            <div className='my-8 w-[400px] lg:w-auto grid lg:grid-cols-2 overflow-hidden rounded-xl hover:scale-105 duration-300'>
                 <div>
                     <img src={project1} alt="project 1" />
                 </div>
-                <div className='bg-gradient-to-r  from-[#884eab] to-[#3806a2] text-center py-4 px-8'>
+                {/* bg-gradient-to-r  from-[#884eab] to-[#3806a2]*/}
+                <div className='bg-gray-300 dark:bg-gray-800 text-center py-4 px-8'>
                     <h1 className='text-2xl font-bold'>Game Galaxy</h1>
-                    <h2 className='text-xl font-semibold text-orange-500'>React</h2>
+                    <h2 className='text-xl font-semibold text-orange-500'>React + CSS</h2>
                     <p>
                     A web application that hosts a couple of fun mini games such as <span className='font-extrabold'>TicTacToe</span>, <span className='font-extrabold'>GuessTheCountry</span>, <span className='font-extrabold'>sliding image puzzle</span> and a <span className='font-extrabold'>multiple choice quiz</span>.
                     </p>
@@ -32,11 +33,11 @@ const Project2 = () => {
                 </div>
             </div>
 
-            <div className='my-8 w-[400px] lg:w-auto grid lg:grid-cols-2 overflow-hidden rounded-xl'>
+            <div className='my-8 w-[400px] lg:w-auto grid lg:grid-cols-2 overflow-hidden rounded-xl hover:scale-105 duration-300'>
                 <div>
                     <img src={project2} alt="project 2" />
                 </div>
-                <div className='bg-gray-800 text-center py-4 px-8'>
+                <div className='bg-gray-300 dark:bg-gray-800 text-center py-4 px-8'>
                     <h1 className='text-2xl font-bold'>Netflix Clone</h1>
                     <h2 className='text-xl font-semibold text-orange-500'>React + Tailwind CSS + Firebase</h2>
                     <p>

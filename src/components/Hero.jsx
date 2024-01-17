@@ -16,7 +16,6 @@ const Hero2 = () => {
   return (
     <div id='home-section' className='w-full h-[900px] md:h-screen'>
         <div className='max-w-[1000px] h-full flex flex-col mx-auto px-8 justify-center text-center sm:text-left dark:text-gray-300'>
-
             <div className='grid md:grid-cols-2 gap-8'>
                 <div>
                     <p className='text-xl md:text-2xl hero-text-slide'>Hi 👋🏻, my name is</p>
