@@ -24,17 +24,17 @@ const Hero2 = () => {
                     <p className='text-xl md:text-2xl py-3 hero-text-slide'>I'm a driven and diligent team player and a learner with a keen interest in web developement 👨🏻‍💻</p>
 
                     <div className='flex gap-6 justify-center py-4 sm:justify-start'>
-                        <a className='hover:scale-110 duration-200 hero-link-slide' href='https://github.com/dancho01' target='blank'>
-                            <FaGithub size={35}/>
+                        <a className='hero-link-slide' href='https://github.com/dancho01' target='blank'>
+                            <FaGithub className='hero-social-icon' size={35}/>
                         </a>
-                        <a className='hover:scale-110 duration-200 hero-link-slide' href='https://www.linkedin.com/in/daniel-cho-129984226/' target='blank'>
-                            <FaLinkedin size={35}/>
+                        <a className='hero-link-slide' href='https://www.linkedin.com/in/daniel-cho-129984226/' target='blank'>
+                            <FaLinkedin className='hero-social-icon' size={35}/>
                         </a>
-                        <a className='hover:scale-110 duration-200 hero-link-slide' href='mailto:chodaniel99@gmail.com'>
-                            <HiOutlineMail size={35}/>
+                        <a className='hero-link-slide' href='mailto:chodaniel99@gmail.com'>
+                            <HiOutlineMail className='hero-social-icon' size={35}/>
                         </a>
-                        <a className='hover:scale-110 duration-200 hero-link-slide' href={resume} target='blank'>
-                            <BsFillPersonLinesFill size={35}/>
+                        <a className='hero-link-slide' href={resume} target='blank'>
+                            <BsFillPersonLinesFill className='hero-social-icon' size={35}/>
                         </a>
                     </div>
 

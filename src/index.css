@@ -21,6 +21,19 @@ html {
 }
 
 @layer components {
+
+  .navlink-a {
+    @apply px-4 py-3 hover:bg-gray-300 dark:hover:bg-gray-800 rounded-xl duration-200;
+  }
+
+  .navlink-mobile-a {
+    @apply px-24 py-2 hover:bg-gray-800 rounded-xl duration-200;
+  }
+
+  .hero-social-icon {
+    @apply hover:scale-110 duration-200;
+  }
+  
   .hero-text-slide {
     opacity: 0;
     transform: translateX(-20px);

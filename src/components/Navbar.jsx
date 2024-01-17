@@ -30,16 +30,16 @@ const Nav2 = () => {
             <div>
                 <ul className='hidden md:flex gap-1 dark:text-white font-semibold items-center'>
                     <li className='navlink-slide'>
-                        <a className='px-4 py-3 hover:bg-gray-300 dark:hover:bg-gray-800 rounded-xl duration-200' href="#home-section">Home</a>
+                        <a className='navlink-a' href="#home-section">Home</a>
                     </li>
                     <li className='navlink-slide'>
-                        <a className='px-4 py-3 hover:bg-gray-300 dark:hover:bg-gray-800 rounded-xl duration-200' href="#about-section">About</a> 
+                        <a className='navlink-a' href="#about-section">About</a> 
                     </li>
                     <li className='navlink-slide'>
-                        <a className='px-4 py-3 hover:bg-gray-300 dark:hover:bg-gray-800 rounded-xl duration-200' href="#project-section">Project</a>
+                        <a className='navlink-a' href="#project-section">Project</a>
                     </li>
                     <li className='navlink-slide'>
-                        <a className='px-4 py-3 hover:bg-gray-300 dark:hover:bg-gray-800 rounded-xl duration-200' href="#contact-section">Contact</a>
+                        <a className='navlink-a' href="#contact-section">Contact</a>
                     </li>
                     <li className='navlink-slide cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-800 rounded-full px-2 py-2' onClick={() => {toggleDarkMode(getters, setters)}}>
                         { getters.darkMode ? <LightModeIcon /> : <DarkModeIcon /> }
@@ -47,6 +47,7 @@ const Nav2 = () => {
                 </ul>
             </div>
          
+            {/*Burger Icon*/}
             <ul className='md:hidden flex gap-1 items-center'>
                 <li className='navlink-slide cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-800 rounded-full px-2 py-2' onClick={() => {toggleDarkMode(getters, setters)}}>
                 { getters.darkMode ? <LightModeIcon /> : <DarkModeIcon /> }
@@ -62,19 +63,18 @@ const Nav2 = () => {
             {/*Mobile Menu*/}
             <ul className={!nav ? 'flex flex-col absolute w-[60%] h-screen bg-slate-500 right-[-60%] top-[70px] duration-300 gap-6 items-center' : 'flex flex-col items-center absolute w-[60%] h-screen gap-6 bg-[#0097b2] right-0 top-[70px] duration-300 text-white font-bold text-xl'}>
                 <li className='mt-10'>
-                    <a onClick={handleClick} className='px-24 py-2 hover:bg-gray-800 rounded-xl duration-200 ' href="#home-section">Home</a>
+                    <a onClick={handleClick} className='navlink-mobile-a' href="#home-section">Home</a>
                 </li>
                 <li>
-                    <a onClick={handleClick} className='px-24 py-2 hover:bg-gray-800 rounded-xl duration-200 ' href="#about-section">About</a>
+                    <a onClick={handleClick} className='navlink-mobile-a' href="#about-section">About</a>
                 </li>
                 <li>
-                    <a onClick={handleClick} className='px-24 py-2 hover:bg-gray-800 rounded-xl duration-200 ' href="#project-section">Projects</a>
+                    <a onClick={handleClick} className='navlink-mobile-a' href="#project-section">Projects</a>
                 </li>
                 <li>
-                    <a onClick={handleClick} className='px-24 py-2 hover:bg-gray-800 rounded-xl duration-200 ' href="#contact-section">Contact</a>
+                    <a onClick={handleClick} className='navlink-mobile-a' href="#contact-section">Contact</a>
                 </li>
             </ul>
-
     </div>
   )
 }
