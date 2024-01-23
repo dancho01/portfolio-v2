@@ -9,6 +9,7 @@ import tailwind from'../assets/tailwind.png'
 import postgres from'../assets/postgresql.png'
 import mui from '../assets/mui.png'
 import TechCard from './TechCard'
+import nextJs from '../assets/nextjs.png'
 
 const Skills = () => {
     const [tech, setTech] = React.useState('language')
@@ -42,6 +43,7 @@ const Skills = () => {
                     <TechCard icon={reacticon} tech="React" />
                     <TechCard icon={tailwind} tech="TailwindCSS" />
                     <TechCard icon={mui} tech="MaterialUI" />
+                    <TechCard icon={nextJs} tech="Next.js" />
                 </div>    
                 }
             </div>

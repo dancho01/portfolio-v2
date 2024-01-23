@@ -5,12 +5,12 @@ import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import { animateNavbar, toggleDarkMode } from '../helper'
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
-import { Context, useContext } from '../context';
+import { ModeContext } from '../context/context';
 
 
 const Nav2 = () => {
     const [nav, setNav] = React.useState(false)
-    const { getters, setters } = useContext(Context)
+    const { getters, setters } = ModeContext()  // use context
 
     React.useEffect(() => {
         animateNavbar()
@@ -57,11 +57,10 @@ const Nav2 = () => {
                 </li>
             </ul>    
 
-            {nav ? <div onClick={handleClick} className='bg-black/40 fixed w-full h-screen top-[70px] left-0'>
-            </div> : ''}
+            {nav ? <div onClick={handleClick} className='bg-black/40 md:hidden fixed w-full h-screen top-[70px] left-0' /> : ''}
 
             {/*Mobile Menu*/}
-            <ul className={!nav ? 'flex flex-col absolute w-[60%] h-screen bg-slate-500 right-[-60%] top-[70px] duration-300 gap-6 items-center' : 'flex flex-col items-center absolute w-[60%] h-screen gap-6 bg-[#0097b2] right-0 top-[70px] duration-300 text-white font-bold text-xl'}>
+            <ul className={!nav ? 'flex flex-col absolute w-[60%] h-screen bg-slate-500 right-[-60%] top-[70px] duration-300 gap-6 items-center' : 'flex md:hidden flex-col items-center absolute w-[60%] h-screen gap-6 bg-[#0097b2] right-0 top-[70px] duration-300 text-white font-bold text-xl'}>
                 <li className='mt-10'>
                     <a onClick={handleClick} className='navlink-mobile-a' href="#home-section">Home</a>
                 </li>
