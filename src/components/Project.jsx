@@ -22,7 +22,7 @@ const Project2 = () => {
                 background={project3} 
                 title='Expense Tracker' 
                 techStack='Next.js + TailwindCSS + Firebase' 
-                desc='An expense tracker built using Firebase and features such as Authentication to allow users to log in and firestore database to store user-specific data.'
+                desc='An expense tracker built using Firebase as a backend, allowing for user authentication and a database to store user-specific data.'
                 demo='https://expense-tracker-delta-murex.vercel.app/'
                 git='https://github.com/dancho01/expense-tracker' 
             />
