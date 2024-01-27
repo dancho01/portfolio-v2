@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio-v2/static/css/main.fd2705e0.css",
-    "main.js": "/portfolio-v2/static/js/main.1f367217.js",
+    "main.css": "/portfolio-v2/static/css/main.708168f4.css",
+    "main.js": "/portfolio-v2/static/js/main.6917fe5f.js",
     "static/media/project2.png": "/portfolio-v2/static/media/project2.651ea91fc1c83eb057fa.png",
     "static/media/project1.png": "/portfolio-v2/static/media/project1.7b35a13c9e5b24c6188d.png",
+    "static/media/project3.png": "/portfolio-v2/static/media/project3.ddc8cde456ba5ebad354.png",
     "static/media/aboutPortrait.jpg": "/portfolio-v2/static/media/aboutPortrait.18434984e68d82c73399.jpg",
     "static/media/portrait.jpg": "/portfolio-v2/static/media/portrait.bcd71f5831f6fd0075c0.jpg",
     "static/media/CV Daniel Cho 2024.pdf": "/portfolio-v2/static/media/CV Daniel Cho 2024.236ef22d90952093954a.pdf",
@@ -15,14 +16,15 @@
     "static/media/tailwind.png": "/portfolio-v2/static/media/tailwind.e47ac876b8d4d0bba47a.png",
     "static/media/mui.png": "/portfolio-v2/static/media/mui.5b2d8a0a309d9f7d47c1.png",
     "static/media/css.png": "/portfolio-v2/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/firebase.png": "/portfolio-v2/static/media/firebase.209703cedf1b1a96bc52.png",
     "static/media/javascript.png": "/portfolio-v2/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "static/media/java.png": "/portfolio-v2/static/media/java.6c64373d3b7415758078.png",
     "index.html": "/portfolio-v2/index.html",
-    "main.fd2705e0.css.map": "/portfolio-v2/static/css/main.fd2705e0.css.map",
-    "main.1f367217.js.map": "/portfolio-v2/static/js/main.1f367217.js.map"
+    "main.708168f4.css.map": "/portfolio-v2/static/css/main.708168f4.css.map",
+    "main.6917fe5f.js.map": "/portfolio-v2/static/js/main.6917fe5f.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd2705e0.css",
-    "static/js/main.1f367217.js"
+    "static/css/main.708168f4.css",
+    "static/js/main.6917fe5f.js"
   ]
 }
