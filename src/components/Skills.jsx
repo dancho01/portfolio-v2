@@ -10,6 +10,7 @@ import postgres from'../assets/postgresql.png'
 import mui from '../assets/mui.png'
 import TechCard from './TechCard'
 import nextJs from '../assets/nextjs.png'
+import firebase from '../assets/firebase.png'
 
 const Skills = () => {
     const [tech, setTech] = React.useState('language')
@@ -41,9 +42,10 @@ const Skills = () => {
                 : 
                 <div className='flex gap-3 flex-wrap justify-center sm:justify-start'> 
                     <TechCard icon={reacticon} tech="React" />
-                    <TechCard icon={tailwind} tech="TailwindCSS" />
-                    <TechCard icon={mui} tech="MaterialUI" />
                     <TechCard icon={nextJs} tech="Next.js" />
+                    <TechCard icon={firebase} tech="Firebase" />
+                    <TechCard icon={tailwind} tech="TailwindCSS" />
+                    <TechCard icon={mui} tech="MaterialUI" />    
                 </div>    
                 }
             </div>
