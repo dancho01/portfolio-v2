@@ -1,13 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio-v2/static/css/main.708168f4.css",
-    "main.js": "/portfolio-v2/static/js/main.6917fe5f.js",
-    "static/media/project2.png": "/portfolio-v2/static/media/project2.651ea91fc1c83eb057fa.png",
+    "main.js": "/portfolio-v2/static/js/main.6096bb32.js",
     "static/media/project1.png": "/portfolio-v2/static/media/project1.7b35a13c9e5b24c6188d.png",
     "static/media/project3.png": "/portfolio-v2/static/media/project3.ddc8cde456ba5ebad354.png",
     "static/media/aboutPortrait.jpg": "/portfolio-v2/static/media/aboutPortrait.18434984e68d82c73399.jpg",
     "static/media/portrait.jpg": "/portfolio-v2/static/media/portrait.bcd71f5831f6fd0075c0.jpg",
-    "static/media/CV Daniel Cho 2024.pdf": "/portfolio-v2/static/media/CV Daniel Cho 2024.236ef22d90952093954a.pdf",
+    "static/media/CV.pdf": "/portfolio-v2/static/media/CV.5269ffc537f60f42423f.pdf",
     "static/media/postgresql.png": "/portfolio-v2/static/media/postgresql.c8891cc79d21bc263a06.png",
     "static/media/logo2.png": "/portfolio-v2/static/media/logo2.1fe7b09ff24fe7ef5bd8.png",
     "static/media/react.png": "/portfolio-v2/static/media/react.0cf951a69d8e58f83f9d.png",
@@ -21,10 +20,10 @@
     "static/media/java.png": "/portfolio-v2/static/media/java.6c64373d3b7415758078.png",
     "index.html": "/portfolio-v2/index.html",
     "main.708168f4.css.map": "/portfolio-v2/static/css/main.708168f4.css.map",
-    "main.6917fe5f.js.map": "/portfolio-v2/static/js/main.6917fe5f.js.map"
+    "main.6096bb32.js.map": "/portfolio-v2/static/js/main.6096bb32.js.map"
   },
   "entrypoints": [
     "static/css/main.708168f4.css",
-    "static/js/main.6917fe5f.js"
+    "static/js/main.6096bb32.js"
   ]
 }
