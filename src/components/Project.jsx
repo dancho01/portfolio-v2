@@ -1,6 +1,5 @@
 import React from 'react'
 import project1 from '../assets/project1.png'
-import project2 from '../assets/project2.png'
 import project3 from '../assets/project3.png'
 import ProjectCard from './ProjectCard'
 
@@ -25,14 +24,6 @@ const Project2 = () => {
                 desc='An expense tracker built using Firebase as a backend, allowing for user authentication and a database to store user-specific data.'
                 demo='https://expense-tracker-delta-murex.vercel.app/'
                 git='https://github.com/dancho01/expense-tracker' 
-            />
-            <ProjectCard 
-                background={project2} 
-                title='Netflix Clone' 
-                techStack='React + TailwindCSS + Firebase' 
-                desc='A front-end Netflix clone with a Firebase back-end. Incorported Firebase Authentication to give login functionality and to store a list of accounts signed up.'
-                demo='https://dancho01.github.io/game-galaxy/'
-                git='https://github.com/dancho01/netflix-clone-app' 
             />
         </div>
     </div>

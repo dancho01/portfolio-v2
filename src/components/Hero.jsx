@@ -4,7 +4,7 @@ import {HiArrowNarrowRight} from 'react-icons/hi'
 import portrait from '../assets/portrait.jpg'
 import { HiOutlineMail } from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
-import resume from '../assets/CV Daniel Cho 2024.pdf'
+import resume from '../assets/CV.pdf'
 import { animateHeroText } from '../helper'
 
 const Hero2 = () => {
